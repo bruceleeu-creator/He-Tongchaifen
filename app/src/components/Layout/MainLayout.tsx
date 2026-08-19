@@ -86,8 +86,13 @@ const MainLayout: React.FC = () => {
       >
         {/* 品牌区 */}
         <div className="sidebar-brand">
-          <div className="brand-mark">合同</div>
-          {!collapsed && <span className="brand-text">项目拆分监督</span>}
+          <div className="brand-mark">合</div>
+          {!collapsed && (
+            <span className="brand-text">
+              项目拆分监督
+              <span className="brand-sub">顾问账簿</span>
+            </span>
+          )}
         </div>
 
         <Menu
@@ -179,16 +184,7 @@ const MainLayout: React.FC = () => {
 
       <Layout>
         <StepNav />
-        <Content
-          style={{
-            margin: 16,
-            padding: 0,
-            background: 'var(--porcelain)',
-            borderRadius: 6,
-            overflow: 'auto',
-            boxShadow: '0 1px 4px rgba(27, 35, 50, 0.04)',
-          }}
-        >
+        <Content className="workbench-content">
           <Outlet />
         </Content>
       </Layout>
