@@ -1,0 +1,60 @@
+{
+  "total": 6,
+  "items": [
+    {
+      "item_id": "pl_001",
+      "pending_item": "合同签署日期未明确",
+      "related_tasks": "所有任务的时间基准",
+      "reason": "合同未写明签署日期",
+      "suggest_confirm_to": "客户项目负责人",
+      "impact_if_not_confirmed": "服务起算时间不明确，任务日期无法准确设置",
+      "status": "待确认"
+    },
+    {
+      "item_id": "pl_002",
+      "pending_item": "顺延和暂停规则缺失",
+      "related_tasks": "客户资料任务、待客户状态任务",
+      "reason": "合同未约定顺延暂停条款",
+      "suggest_confirm_to": "客户决策人",
+      "impact_if_not_confirmed": "客户未提供资料时无法启动顺延，可能导致我方承担延期责任",
+      "status": "待确认"
+    },
+    {
+      "item_id": "pl_003",
+      "pending_item": "服务费用或费用区间未明确",
+      "related_tasks": "项目整体",
+      "reason": "合同未写明费用",
+      "suggest_confirm_to": "客户决策人",
+      "impact_if_not_confirmed": "无法确认服务范围边界，可能拆出超范围任务",
+      "status": "待确认"
+    },
+    {
+      "item_id": "pl_004",
+      "pending_item": "阶段方案评审会的具体时间和频率未明确",
+      "related_tasks": "阶段方案评审会任务",
+      "reason": "计划只写了嵌入式服务体系，未明确评审节奏",
+      "suggest_confirm_to": "客户决策人",
+      "impact_if_not_confirmed": "无法按阶段形成客户确认，方案可能成为单方输出",
+      "status": "待确认"
+    },
+    {
+      "item_id": "pl_005",
+      "pending_item": "周报确认机制未明确",
+      "related_tasks": "项目启动会任务",
+      "reason": "启动会纪要尚未生成",
+      "suggest_confirm_to": "客户项目负责人",
+      "impact_if_not_confirmed": "无法建立周度进度确认机制",
+      "status": "待确认"
+    },
+    {
+      "item_id": "pl_006",
+      "pending_item": "部分任务客户责任人不够具体",
+      "related_tasks": "客户资料任务、客户确认任务",
+      "reason": "资料中只有角色没有姓名",
+      "suggest_confirm_to": "客户项目负责人",
+      "impact_if_not_confirmed": "无法准确发送资料催办通知",
+      "status": "待确认"
+    }
+  ],
+  "created_at": "2026-07-11T18:58:33.019496"
+}

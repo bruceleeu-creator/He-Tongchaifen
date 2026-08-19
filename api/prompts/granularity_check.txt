@@ -1,0 +1,34 @@
+请检查以下任务主表是否符合年度财税顾问项目的任务颗粒度要求。
+
+【任务主表】
+{{任务主表}}
+
+只输出合法 JSON，禁止输出 Markdown、表格、解释文字或代码块。
+
+JSON 结构必须为：
+{
+  "need_split": [
+    {"task_name": "", "problem": "", "suggested_subtasks": []}
+  ],
+  "missing_fields": [
+    {"task_name": "", "missing_fields": [], "suggestion": ""}
+  ],
+  "client_data_not_separated": [
+    {"related_task": "", "current_text": "", "suggested_client_data_task": ""}
+  ],
+  "unclear_deliverables": [
+    {"task_name": "", "current_deliverables": "", "suggested_deliverables": ""}
+  ],
+  "summary": {
+    "passed": true,
+    "issue_count": 0
+  },
+  "generated_by": "llm"
+}
+
+检查标准：
+1. 两周以上任务必须继续拆分。
+2. 每项任务必须有任务名称、服务模块、任务类型、下一步动作、AI提取依据。
+3. 客户资料、客户确认、会议沟通必须独立成行。
+4. 没有交付成果的服务执行任务必须提示补充。
+5. 不得为了完整而编造合同或计划没有的内容。

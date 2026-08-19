@@ -1,0 +1,31 @@
+请对比服务合同和年度服务计划，检查两者是否一致。
+
+【合同识别结果】
+{{合同识别结果}}
+
+【年度服务计划识别结果】
+{{年度服务计划识别结果}}
+
+只输出合法 JSON，禁止输出 Markdown、表格、解释文字或代码块。
+
+JSON 结构必须为：
+{
+  "matched_items": [
+    {"service_module": "", "contract_term": "", "plan_arrangement": "", "task_conversion_note": ""}
+  ],
+  "conflict_items": [
+    {"conflict_point": "", "contract_content": "", "plan_content": "", "risk": "", "suggestion": ""}
+  ],
+  "missing_items": [
+    {"missing_type": "", "contract_has_plan_missing": "", "plan_has_contract_missing": "", "suggestion": ""}
+  ],
+  "total": 0,
+  "generated_by": "llm"
+}
+
+判断规则：
+1. 合同有、计划没有：标记为"计划需补充节点"。
+2. 计划有、合同没有：标记为"服务边界待合同核验"。
+3. 日期冲突：不得自行选择，以待人工确认为准。
+4. 交付成果冲突：优先标记冲突，不直接合并。
+5. total 必须等于 matched_items、conflict_items、missing_items 三个数组的总长度。

@@ -1,0 +1,40 @@
+# 环境变量与本机 AI 配置
+.env
+.env.local
+.ai_config.json
+
+# 运行数据与客户资料
+runs/*
+!runs/.gitkeep
+uploads/*
+!uploads/.gitkeep
+exports/*
+!exports/.gitkeep
+parsed/*
+!parsed/.gitkeep
+api/data/
+
+# 构建与依赖
+app/node_modules/
+app/dist/
+api/venv/
+.venv/
+venv/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# 本地工具状态
+.mimosa/
